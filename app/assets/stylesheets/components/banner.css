@@ -1,0 +1,29 @@
+.banner-color{
+  background-color: linear-gradient(to bottom right, rgba(84,203,232,0.7), rgba(147,24,255,0.5));
+}
+.banner img{
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	background-image: asset_url("laptop.jpg");
+}
+
+.text-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Archivo Black', sans-serif;
+	color: #FFF2FD;
+	font-size: 90px;
+	text-align: center;
+}
+
+.join{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Archivo Black', sans-serif;
+	text-align: center;
+}
