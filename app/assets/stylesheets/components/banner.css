@@ -5,7 +5,6 @@
 	position: relative;
 	width: 100%;
 	background-size: cover;
-	background-image: asset_url("laptop.jpg");
 }
 
 .text-center{
