@@ -99,7 +99,6 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    google-analytics-rails (1.1.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.1.0)
@@ -239,7 +238,6 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   dotenv-rails
-  google-analytics-rails (= 1.1.1)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
