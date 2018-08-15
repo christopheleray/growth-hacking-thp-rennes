@@ -4,7 +4,7 @@ require 'dotenv'
 Dotenv.load
 
   def welcome_email
-    users = Depute.last
+    users = Depute.all
     users.each do |user|
     mail( from: 'thprennes@gmail.com',
       to: user.email, 
