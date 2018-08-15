@@ -1,0 +1,2 @@
+class Depute < ApplicationRecord
+end
