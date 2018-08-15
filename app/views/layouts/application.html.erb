@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Hacking Project Rennes">
+    <meta name="author" content="THP Rennes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Grow THP Rennes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>GrowthHackingThpRennes</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +18,10 @@
   </head>
 
   <body>
+    <%= render 'layouts/header'%>
+    <%= render 'layouts/banner'%>
+    <%= render 'layouts/header'%>
     <%= yield %>
+    <%= render 'layouts/footer'%>
   </body>
 </html>
