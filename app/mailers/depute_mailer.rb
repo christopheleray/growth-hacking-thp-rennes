@@ -9,7 +9,7 @@ Dotenv.load
     mail( from: 'thprennes@gmail.com',
       to: user.email, 
       subject: 'Apprendre le code gratuitement',
-      )
+      ).deliver.now
     end
   end
 end
