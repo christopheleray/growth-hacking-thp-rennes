@@ -3,10 +3,10 @@ class OpenClassroomTwitter
 
   def initialize
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key         =
-      config.consumer_secret      =
-      config.access_token         =
-      config.access_token_secret  = 
+      config.consumer_key         = ENV['TWITTER_API_KEY']
+      config.consumer_secret      = ENV['TWITTER_API_SECRET']
+      config.access_token         = ENV['TWITTER_TOKEN']
+      config.access_token_secret  = ENV['TWITTER_TOKEN_SECRET']
     end
   end
 
@@ -40,5 +40,4 @@ class OpenClassroomTwitter
     end
     p '-' * 20 + 'Done' + '-' * 20
   end
-end
 end
