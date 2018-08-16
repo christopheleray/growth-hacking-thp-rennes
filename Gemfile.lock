@@ -97,6 +97,7 @@ GEM
       railties (>= 3.2, < 6.0)
     equalizer (0.0.11)
     erubi (1.7.1)
+    excon (0.62.0)
     execjs (2.7.0)
     ffi (1.9.25)
     globalid (0.4.1)
@@ -120,6 +121,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    json (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -129,6 +131,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    mailchimp-api (2.0.6)
+      excon (>= 0.16.0)
+      json (>= 1.7.7)
     marcel (0.3.2)
       mimemagic (~> 0.3.2)
     memoizable (0.4.2)
@@ -266,6 +271,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mailchimp-api
   mailjet!
   nokogiri
   pg (>= 0.18, < 2.0)
