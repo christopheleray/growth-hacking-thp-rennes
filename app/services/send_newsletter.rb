@@ -10,16 +10,17 @@ class SendNewsletter
   attr_accessor :mailchimp
 
   def initialize
-    @mailchimp = Mailchimp::API.new('6576586af43be783fc042c3dcb544424-us19')
+    @mailchimp = Mailchimp::API.new(ENV['MAILCHIMP_API_KEY'])
   end
 
   def get_member_list
     puts "get member list"
-    @json = mailchimp.lists.members('7b033f50e2')[:'data']
+    @json = mailchimp.lists.members(ENV['MAILCHIMP_LIST_ID'])['data']
     puts @json 
     puts "fin get member list"
-    @json.each do 
-      puts @json['email']['email']
+    puts "j affiche email de json"
+    @json.each do |user|
+      puts user[:email]
    #   Subscriber.create(email: @json['email'][])
     end
   end
