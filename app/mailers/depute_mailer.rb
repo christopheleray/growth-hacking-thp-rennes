@@ -4,12 +4,12 @@ require 'dotenv'
 Dotenv.load
 
   def welcome_email
-    user = Depute.all
-    user.each do 
+    users = Depute.all
+    users.each do |user|
     mail( from: 'thprennes@gmail.com',
       to: user.email, 
       subject: 'Apprendre le code gratuitement',
-      )
+      ).deliver.now
     end
   end
 end
