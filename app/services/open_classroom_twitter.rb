@@ -30,7 +30,7 @@ class OpenClassroomTwitter
     p '-' * 20 + 'dm sent' + '-' * 20
   end
 
-  def get_oc_followers
+  def perform
     p '-' * 20 + "let's start this shit" + '-' * 20
     @client.followers("OCFrance").each do |follower|
       follow_user(follower.id)
