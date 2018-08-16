@@ -3,13 +3,10 @@ class DeputeMailer < ApplicationMailer
 require 'dotenv'
 Dotenv.load
 
-  def welcome_email
-    users = Depute.all
-    users.each do |user|
+  def welcome_email(user)
     mail( from: 'thprennes@gmail.com',
-      to: user.email, 
+      to: user, 
       subject: 'Apprendre le code gratuitement',
-      ).deliver.now
-    end
+      )
   end
 end
