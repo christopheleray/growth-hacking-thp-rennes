@@ -1,9 +1,18 @@
 require 'test_helper'
 
 class StaticsPagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get statics_pages_index_url
+  test 'Should get the root page' do
+    get root_url
+    assert_response :success
+  end
+  
+  test 'Should get the twitter landing page' do
+    get twitter_url
     assert_response :success
   end
 
+  test 'Should get the facebook landing page' do
+    get facebook_url
+    assert_response :success
+  end
 end

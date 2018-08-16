@@ -1,0 +1,103 @@
+.banner-color{
+  background-color: linear-gradient(to bottom right, rgba(84,203,232,0.7), rgba(147,24,255,0.5));
+}
+.banner img{
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.text-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Archivo Black', sans-serif;
+	color: #FFF2FD;
+	font-size: 90px;
+	text-align: center;
+}
+
+.join{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Archivo Black', sans-serif;
+	text-align: center;
+  padding-top: 40px; 
+}
+
+.button{
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  list-style: none;
+
+}
+
+/* bannière in */
+
+.bannerlinkedin-color {
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bannerlinkedin-color hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bannerlinkedin-color h1 {
+  font-size: 2rem;
+}
+
+.bannerlinkedin-color p {
+  font-weight: 300;
+}
+
+.banner-3 img{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+/* bannière twitter */
+
+.bannertwitter-color{
+  background-color: linear-gradient(to bottom right, rgba(84,203,232,0.7), rgba(147,24,255,0.5));
+}
+
+.bannertwitter-color {
+  margin-top: 55px;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: image-url('twitter.jpg');
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bannertwitter-color hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bannertwitter-color h1 {
+  font-size: 2rem;
+}
+
+.bannertwitter-color p {
+  font-weight: 300;
+}
+

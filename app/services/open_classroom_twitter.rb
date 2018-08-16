@@ -26,7 +26,7 @@ class OpenClassroomTwitter
 
   def send_dm(user)
     p '-' * 20 + 'sending dm to the user' + '-' * 20
-    @client.create_direct_message(user.id, "Salut, est-ce que ça te dis d'apprendre à coder ? si oui, rends toi à l'adresse suivante : https://thp-rennes-growth-hacking.herokuapp.com/twitter pour voir ce qu'on a réussis à faire en 1 mois et demi avec la formation The Hacking Project")
+    @client.create_direct_message(user, "Salut, est-ce que ça te dis d'apprendre à coder ? si oui, rends toi à l'adresse suivante : https://thp-rennes-growth-hacking.herokuapp.com/twitter pour voir ce qu'on a réussis à faire en 1 mois et demi avec la formation The Hacking Project")
     p '-' * 20 + 'dm sent' + '-' * 20
   end
 
@@ -35,7 +35,7 @@ class OpenClassroomTwitter
     @client.followers("OCFrance").each do |follower|
       follow_user(follower.id)
       get_and_like_last_tweet(follower.id)
-      send_dm(follower.id)
+      #send_dm(follower.id)
       sleep 3600
     end
     p '-' * 20 + 'Done' + '-' * 20
