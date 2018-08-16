@@ -1,24 +1,40 @@
-# README
+# Growth Hacking de The Hacking Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Presentation du site
 
-Things you may want to cover:
+Le site est composé de 3 landings pages différentes correspondant chacune à une manière d'acceder au site, en fonction des liens qui ont été envoyés à nos cibles.
 
-* Ruby version
+Pour la création de ce site nous nous sommes réparti.e.s en deux équipes : une s'occupant de la partie front et une autre s'occupant de la partie back(scrapping et bots).
 
-* System dependencies
+#### Présentation de notre équipe
 
-* Configuration
+Nous sommes l'équipe de Rennes de la session 5 de The Hacking Project, à savoir Christophe Leray, Léona Chevrel, Rémi Samson, Romain Saillour et Sandrine Le Breton. Voici les liens vers nos github réspectifs :
 
-* Database creation
+[Christophe Leray](https://github.com/christopheleray)
 
-* Database initialization
+[Léona CHevrel](https://github.com/RainbowQuartz)
 
-* How to run the test suite
+[Rémi Samson](https://github.com/breizzh)
 
-* Services (job queues, cache servers, search engines, etc.)
+[Romain Saillour](https://github.com/RomainSai)
 
-* Deployment instructions
+[Sandrine Le Breton](https://github.com/Ertemelle)
+*****
+## Acquisition des données
 
-* ...
+#### Députés
+
+Nous avons repris un travail effectué plus tôt dans la formation permettant de récuperer les addresses email des députés français en utilisant la gem **nokogiri**.
+Nous avons ensuite utilisé **mailjet** pour envoyer un email à chacun de ces députés et leur donner le lien vers notre première LP.
+
+#### Twitter
+
+Nous avons créé un bot **twitter** qui va rechrcher toutes les personnes qui follow le compte d'Open Classrooms afin de les follow, de fave leur dernier post et de leur envoyer un dm contenant le lien vers notre deuxième LP.
+Ces taches s'éffectuent à raison d'une par heure afin de ne pas dépasser le nombre de requètes autorisées par jour par **l'API twitter**.
+Nous avons ensuite utilisé le **scheduler de Heroku** pour que cette tache tourne en continu.
+
+#### Linkedin
+*****
+## Metrics
+*****
+## Pistes d'améliorations
