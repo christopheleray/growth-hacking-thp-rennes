@@ -1,4 +1,5 @@
 # Growth Hacking de The Hacking Project
+![logo THP](https://www.thehackingproject.org/assets/thp-logo-5f2f06c9444205a88123ca1de74646970e5a1dfb03698d02db33e5e62a60d6cd.png)
 
 ## Presentation du site
 
