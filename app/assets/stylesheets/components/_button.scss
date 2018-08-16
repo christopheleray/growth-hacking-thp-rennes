@@ -1,0 +1,15 @@
+
+.button{
+  background-color: #17a2b8;
+
+}
+
+.button:hover, .button:focus, .button:active {
+  color: #fff;
+  background-color: #0F6A78 !important;
+  text-decoration: none;
+}
+
+.button:active, .button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
