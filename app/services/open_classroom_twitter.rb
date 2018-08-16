@@ -3,10 +3,10 @@ class OpenClassroomTwitter
 
   def initialize
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key         =
-      config.consumer_secret      =
-      config.access_token         =
-      config.access_token_secret  = 
+      config.consumer_key         = ENV['TWITTER_API_KEY']
+      config.consumer_secret      = ENV['TWITTER_API_SECRET']
+      config.access_token         = ENV['TWITTER_TOKEN']
+      config.access_token_secret  = ENV['TWITTER_TOKEN_SECRET']
     end
   end
 
@@ -20,7 +20,7 @@ class OpenClassroomTwitter
     p '-' * 20 + 'getting the last tweet from this user' + '-' * 20
     last_tweet = @client.user_timeline(user).last
     p '-' * 20 + 'Liking the last tweet from the user' + '-' * 20
-    @client.favorite(last_tweet.to_i)
+    @client.favorite(last_tweet.id)
     p '-' * 20 + 'last tweet from user is liked' + '-' * 20
   end
 
@@ -35,7 +35,7 @@ class OpenClassroomTwitter
     @client.followers("OCFrance").each do |follower|
       follow_user(follower.id)
       get_and_like_last_tweet(follower.id)
-      send_dm(follower.id)
+      #send_dm(follower.id)
       sleep 3600
     end
     p '-' * 20 + 'Done' + '-' * 20
