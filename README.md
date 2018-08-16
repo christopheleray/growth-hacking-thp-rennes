@@ -35,18 +35,43 @@ Nous avons repris un travail effectué plus tôt dans la formation permettant de
 Nous avons ensuite utilisé **mailjet** pour envoyer un email à chacun de ces députés et leur donner le lien vers notre première LP.
 Le code de cette fonctionnalité est stocké dans les services `app/services/scrap_parlement.rb` et `app/services/send_massmailing.rb`
 
+Pour executer les programmes lancer les commandes suivantes: 
+
+` $ ScrapParlement.perform`
+
+` $ SendMassmailing.new.perform`
+
 #### Twitter
 
 Nous avons créé un bot **twitter** qui va rechrcher toutes les personnes qui follow le compte d'Open Classrooms afin de les follow, de fave leur dernier post et de leur envoyer un dm contenant le lien vers notre deuxième LP.
 Ces taches s'éffectuent à raison d'une par heure afin de ne pas dépasser le nombre de requètes autorisées par jour par **l'API twitter**.
 Le code pour ce bot est stocké dans le service `app/services/open_classrooms_twitter.rb`
-Nous avons ensuite utilisé le **scheduler de Heroku** pour que cette tache tourne en continu.
 
-#### Facebook
+Pour executer le programme lancer les commandes suivantes: 
+
+`$ OpenClassroomTwitter.new.perform`
+
+#### Linkedin
 
 Nous avons ultilisé **watir** pour envoyer un message privé à chaque personne présente sur le groupe Facebook *Startup Weekends*.
+
+#### Envoie newsletter via le maillet à a liste de subscriber mailchimp
+
+Utilisation de la `gem 'mailchimp-api'`
+
+Création d'un service SendNewsletter dans app/services/send_newsletter.rb afin de se connecter à mailchimp et envoye run email a chaque personne de la liste.
+
+Pour executer le programme lancer les commandes suivantes: 
+
+` $ SendNewsletter.new.perform `
+
+
 *****
 ## Metrics
+
+Un compte sur google anaytlics a  été crée et lié a l'app afin de récupere le nombre de visiteur. 
 *****
 ## Pistes d'améliorations
+Utiliser le scheduler heroku pour automatiser les taches mais cela nécesite d'entrer une carte bancaire et potentiellement de payer du temps serveur pour les tests. 
+
 *****
