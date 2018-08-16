@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'statics_pages#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/twitter', to: 'statics_pages#twitter', as: 'twitter'
+  get '/facebook', to: 'statics_pages#facebook', as: 'facebook'
 end
