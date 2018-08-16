@@ -1,0 +1,25 @@
+.bannerfacebook-color{
+  background-color: linear-gradient(to bottom right, rgba(84,203,232,0.7), rgba(147,24,255,0.5));
+}
+
+.row{
+  width: 50%;
+}
+
+.my-auto{
+  display: flex;
+  justify-content: space-between;
+}
+
+.register_facebook{
+  width: 50%;
+  position: absolute;
+
+}
+
+#mc_embed_signup{
+  margin: 0 15px;
+  width: 90%;
+  background-color: #11ffee00;
+  border-radius: 5px;
+}
