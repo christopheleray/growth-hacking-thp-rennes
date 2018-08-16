@@ -12,7 +12,7 @@ class StaticsPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'Should get the facebook landing page' do
-    get facebook_url
+    get linkedin_url
     assert_response :success
   end
 end

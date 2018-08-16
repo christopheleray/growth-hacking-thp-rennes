@@ -70,6 +70,8 @@ Pour executer le programme lancer les commandes suivantes:
 ## Metrics
 
 Un compte sur google anaytlics a  été crée et lié a l'app afin de récupere le nombre de visiteur. 
+
+![Screenshot Google Analytics](app/assets/images/google-analytics.png)
 *****
 ## Pistes d'améliorations
 Utiliser le scheduler heroku pour automatiser les taches mais cela nécesite d'entrer une carte bancaire et potentiellement de payer du temps serveur pour les tests. 
