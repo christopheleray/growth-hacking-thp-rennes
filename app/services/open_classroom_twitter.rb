@@ -20,7 +20,7 @@ class OpenClassroomTwitter
     p '-' * 20 + 'getting the last tweet from this user' + '-' * 20
     last_tweet = @client.user_timeline(user).last
     p '-' * 20 + 'Liking the last tweet from the user' + '-' * 20
-    @client.favorite(last_tweet.id)
+    @client.favorite(last_tweet)
     p '-' * 20 + 'last tweet from user is liked' + '-' * 20
   end
 
