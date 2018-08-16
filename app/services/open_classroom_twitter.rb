@@ -41,3 +41,4 @@ class OpenClassroomTwitter
     p '-' * 20 + 'Done' + '-' * 20
   end
 end
+end
