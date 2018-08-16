@@ -6,7 +6,7 @@
 
 [landing page 2](https://thp-rennes-growth-hacking.herokuapp.com/twitter)
 
-[landing page 3](https://thp-rennes-growth-hacking.herokuapp.com/facebook)
+[landing page 3](https://thp-rennes-growth-hacking.herokuapp.com/linkedin)
 
 
 Le site est composé de 3 landings pages différentes correspondant chacune à une manière d'acceder au site, en fonction des liens qui ont été envoyés à nos cibles.
