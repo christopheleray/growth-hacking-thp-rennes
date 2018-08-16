@@ -33,14 +33,18 @@ Nous sommes l'équipe de Rennes de la session 5 de The Hacking Project, à savoi
 
 Nous avons repris un travail effectué plus tôt dans la formation permettant de récuperer les addresses email des députés français en utilisant la gem **nokogiri**.
 Nous avons ensuite utilisé **mailjet** pour envoyer un email à chacun de ces députés et leur donner le lien vers notre première LP.
+Le code de cette fonctionnalité est stocké dans les services `app/services/scrap_parlement.rb` et `app/services/send_massmailing.rb`
 
 #### Twitter
 
 Nous avons créé un bot **twitter** qui va rechrcher toutes les personnes qui follow le compte d'Open Classrooms afin de les follow, de fave leur dernier post et de leur envoyer un dm contenant le lien vers notre deuxième LP.
 Ces taches s'éffectuent à raison d'une par heure afin de ne pas dépasser le nombre de requètes autorisées par jour par **l'API twitter**.
+Le code pour ce bot est stocké dans le service `app/services/open_classrooms_twitter.rb`
 Nous avons ensuite utilisé le **scheduler de Heroku** pour que cette tache tourne en continu.
 
-#### Linkedin
+#### Facebook
+
+Nous avons ultilisé **watir** pour envoyer un message privé à chaque personne présente sur le groupe Facebook *Startup Weekends*.
 *****
 ## Metrics
 *****
