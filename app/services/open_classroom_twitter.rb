@@ -3,10 +3,10 @@ class OpenClassroomTwitter
 
   def initialize
     @client = Twitter::REST::Client.new do |config|
-      config.consumer_key         = ENV['TWITTER_API_KEY']
-      config.consumer_secret      = ENV['TWITTER_API_SECRET']
-      config.access_token         = ENV['TWITTER_TOKEN']
-      config.access_token_secret  = ENV['TWITTER_TOKEN_SECRET']
+      config.consumer_key         =
+      config.consumer_secret      =
+      config.access_token         =
+      config.access_token_secret  = 
     end
   end
 
@@ -20,13 +20,13 @@ class OpenClassroomTwitter
     p '-' * 20 + 'getting the last tweet from this user' + '-' * 20
     last_tweet = @client.user_timeline(user).last
     p '-' * 20 + 'Liking the last tweet from the user' + '-' * 20
-    @client.favorite(last_tweet.id)
+    @client.favorite(last_tweet.to_i)
     p '-' * 20 + 'last tweet from user is liked' + '-' * 20
   end
 
   def send_dm(user)
     p '-' * 20 + 'sending dm to the user' + '-' * 20
-    @client.create_direct_message(user.id, "Salut, est-ce que ça te dis d'apprendre à coder ? si oui, rends toi à l'adresse suivante : https://thp-rennes-growth-hacking.herokuapp.com/twitter pour voir ce qu'on a réussis à faire en 1 mois et demi avec la formation The Hacking Project")
+    @client.create_direct_message(user, "Salut, est-ce que ça te dis d'apprendre à coder ? si oui, rends toi à l'adresse suivante : https://thp-rennes-growth-hacking.herokuapp.com/twitter pour voir ce qu'on a réussis à faire en 1 mois et demi avec la formation The Hacking Project")
     p '-' * 20 + 'dm sent' + '-' * 20
   end
 
