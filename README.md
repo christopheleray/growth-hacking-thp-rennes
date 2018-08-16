@@ -4,7 +4,7 @@
 Le site est composé de 3 landings pages différentes correspondant chacune à une manière d'acceder au site, en fonction des liens qui ont été envoyés à nos cibles.
 
 Pour la création de ce site nous nous sommes réparti.e.s en deux équipes : une s'occupant de la partie front et une autre s'occupant de la partie back(scrapping et bots).
-
+*****
 ## Acquisition des données
 
 ### Députés
@@ -19,7 +19,7 @@ Ces taches s'éffectuent à raison d'une par heure afin de ne pas dépasser le n
 Nous avons ensuite utilisé le scheduler de Heroku pour que cette tache tourne en continu.
 
 ### Linkedin
- 
+*****
 ## Metrics
-
+*****
 ## Pistes d'améliorations
